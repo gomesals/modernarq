@@ -1,3 +1,4 @@
 <template lang="pug">
-  div index
+  div
+    nuxt-link(:to="{name: 'projeto-id', params: {id: 1}}") projeto 1
 </template>
