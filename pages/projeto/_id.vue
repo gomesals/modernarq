@@ -2,18 +2,46 @@
   div
     project-header(:project="project")
     project-content(:project="project")
+    project-gallery(:project="project")
 </template>
 
 <script>
 import ProjectHeader from '~/components/ProjectHeader'
 import ProjectContent from '~/components/ProjectContent'
+import ProjectGallery from '~/components/ProjectGallery'
 export default {
-  components: { ProjectHeader, ProjectContent },
+  components: { ProjectHeader, ProjectContent, ProjectGallery },
   data: () => ({
     project: {
       title: 'Projeto',
       images: {
-        main: 'https://picsum.photos/1200/600?image=1081'
+        main: 'https://picsum.photos/1200/600?image=1081',
+        gallery: [
+          {
+            p: 'https://picsum.photos/300/200?image=1081',
+            o: 'https://picsum.photos/1200/600?image=1081'
+          },
+          {
+            p: 'https://picsum.photos/300/200?image=1076',
+            o: 'https://picsum.photos/1200/600?image=1076'
+          },
+          {
+            p: 'https://picsum.photos/300/200?image=1075',
+            o: 'https://picsum.photos/1200/600?image=1075'
+          },
+          {
+            p: 'https://picsum.photos/300/200?image=1048',
+            o: 'https://picsum.photos/1200/600?image=1048'
+          },
+          {
+            p: 'https://picsum.photos/300/200?image=1031',
+            o: 'https://picsum.photos/1200/600?image=1031'
+          },
+          {
+            p: 'https://picsum.photos/300/200?image=1033',
+            o: 'https://picsum.photos/1200/600?image=1033'
+          }
+        ]
       },
       date: '18/04/2018',
       category: 'Design de interiores',
