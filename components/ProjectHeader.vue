@@ -1,5 +1,5 @@
 <template lang="pug">
-  header(:style="`background-image: url(${project.images.main})`")
+  header(:style="`background-image: url(${project.images.main}&blur)`")
     h1 {{ project.title }}
 </template>
 
@@ -12,7 +12,7 @@ export default {
 <style lang='postcss' scoped >
 header {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-position: center center;
   background-repeat: no-repeat;
