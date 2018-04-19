@@ -21,4 +21,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+body{
+  background-color: #f1f3f5;
+}
 </style>

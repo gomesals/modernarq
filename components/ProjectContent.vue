@@ -21,11 +21,10 @@ export default {
 }
 </script>
 
-
 <style lang="postcss" scoped>
 .content {
   width: 70%;
-  margin: -30vh auto 0;
+  margin: -35vh auto 4em;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   box-shadow: 0 3px 11px -4px rgba(0, 0, 0, 0.2);
