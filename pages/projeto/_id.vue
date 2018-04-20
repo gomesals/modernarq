@@ -3,14 +3,21 @@
     project-header(:project="project")
     project-content(:project="project")
     project-gallery(:project="project")
+    last-projects()
 </template>
 
 <script>
 import ProjectHeader from '~/components/ProjectHeader'
 import ProjectContent from '~/components/ProjectContent'
 import ProjectGallery from '~/components/ProjectGallery'
+import LastProjects from '~/components/LastProjects'
 export default {
-  components: { ProjectHeader, ProjectContent, ProjectGallery },
+  components: {
+    ProjectHeader,
+    ProjectContent,
+    ProjectGallery,
+    LastProjects
+  },
   data: () => ({
     project: {
       title: 'Projeto',
