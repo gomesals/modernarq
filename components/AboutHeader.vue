@@ -14,7 +14,6 @@ header {
   width: 100%;
   height: 40vh;
   background-color: #000;
-  margin-bottom: 2rem;
   text-align: center;
   background-position: center center;
   background-repeat: no-repeat;

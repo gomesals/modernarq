@@ -22,29 +22,15 @@ export default {
 <style lang="postcss" scoped>
 section {
   background: #212529;
-  padding: 4em 0;
 }
 .content {
-  width: 70%;
-  margin: 0 auto;
   h2 {
-    margin-bottom: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
     color: #f8f9fa;
   }
 }
 ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
   li {
-    width: 23%;
-    margin-bottom: 1.5em;
     height: 200px;
-    margin-right: 2%;
     color: #f1f3f5;
     background-position: center center;
     background-repeat: no-repeat;
@@ -73,19 +59,6 @@ ul {
       font-size: 1.15em;
       color: #dee2e6;
       transition: color 300ms ease;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  section {
-    .content {
-      width: 96%;
-      ul {
-        li {
-          width: 100%;
-          margin-right: 0;
-        }
-      }
     }
   }
 }

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  #about
     about-header(:image="about.image")
     about-text(:text="about.text")
     about-services(:services="about.services")
@@ -56,3 +56,62 @@ export default {
   })
 }
 </script>
+
+<style lang="postcss" scoped>
+#about>>>section {
+  padding: 3rem 0 1.5rem;
+  .content {
+    width: 70%;
+    min-width: 700px;
+    margin: 0 auto;
+    h2 {
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      li {
+        margin-bottom: 1.5rem;
+        width: 30%;
+        margin-right: 3%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #about>>>section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .content {
+      width: 100%;
+      min-width: initial;
+      ul {
+        li {
+          width: 48.5%;
+          margin-right: 0;
+          &:nth-child(odd) {
+            margin-right: 3%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  #about>>>section {
+    .content ul {
+      li {
+        width: 100%;
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+</style>
