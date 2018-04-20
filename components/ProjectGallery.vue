@@ -18,7 +18,7 @@ export default {
 <style lang="postcss" scoped>
 .gallery {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   ul {
     list-style: none;
     display: flex;
