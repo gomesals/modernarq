@@ -83,12 +83,12 @@ export default {
       list-style: none;
       padding-left: 0;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
       li {
-        width: 48%;
-        margin: 0.45em auto;
+        width: 49%;
+        margin-bottom: 1em;
         height: 200px;
         background-color: #222;
         background-position: center center;
