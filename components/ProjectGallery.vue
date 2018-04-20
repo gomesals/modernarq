@@ -1,58 +1,78 @@
 <template lang="pug">
-  .gallery
-    ul
-      li(
-        v-for="(item, index) in project.images.gallery"
-        :key="index"
-        :style="`background-image: url(${item.p})`"
-      )
+  section
+    .content
+      h2 Galeria
+      ul
+        li(
+          v-for="(item, index) in gallery"
+          :key="index"
+          :style="`background-image: url(${item.p})`"
+          :title="`Imagem ${index + 1}`"
+        )
 </template>
 
 <script>
 // TODO: add image view
 export default {
-  props: ['project']
+  props: ['gallery']
 }
 </script>
 
 <style lang="postcss" scoped>
-.gallery {
-  width: 70%;
-  margin: 0 auto 4rem;
-  ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 0;
-    li {
-      width: 32%;
-      margin: 6px 0.6%;
-      height: 200px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: all 300ms ease;
-      box-shadow: 0 3px 11px -4px rgba(0, 0, 0, 0.2);
-      &:hover {
-        transform: scale(1.1) translateY(-2px);
-      }
-      &.view {
-        box-shadow: none;
-        transform: none;
-        position: fixed;
-        top: 5%;
-        left: 5%;
-        width: 90%;
-        height: 90%;
-        background-size: contain;
+section {
+  background: #fff;
+  .content {
+    h2 {
+      color: #212529;
+    }
+    ul {
+      li {
+        width: 30%;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 300ms ease;
+        box-shadow: 0 3px 11px -4px rgba(0, 0, 0, 0.2);
+        &:hover {
+          transform: scale(1.1) translateY(-2px);
+        }
+        /* &.view {
+          box-shadow: none;
+          transform: none;
+          position: fixed;
+          top: 5%;
+          left: 5%;
+          width: 90%;
+          height: 90%;
+          background-size: contain;
+        } */
       }
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .gallery {
-    width: 96%;
+  section {
+    .content {
+      ul {
+        justify-content: space-between;
+        li {
+          width: 48%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  section {
+    .content ul {
+      li {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

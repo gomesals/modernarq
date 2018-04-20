@@ -1,9 +1,9 @@
 <template lang="pug">
-  div
+  #product
     project-header(:project="project")
     project-content(:project="project")
-    project-gallery(:project="project")
-    last-projects()
+    project-gallery(:gallery="project.images.gallery")
+    last-projects
 </template>
 
 <script>
@@ -64,3 +64,38 @@ export default {
 }
 </script>
 
+<style lang="postcss" scoped>
+#product>>>section {
+  padding: 3rem 0 1.5rem;
+  .content {
+    width: 70%;
+    min-width: 700px;
+    margin: 0 auto;
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      li {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #product>>>section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .content {
+      width: 100%;
+      min-width: initial;
+    }
+  }
+}
+</style>

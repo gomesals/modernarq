@@ -1,14 +1,17 @@
 <template lang="pug">
-  #projects(:style="projectBg")
+  section(:style="projectBg")
     .content
-      h3 Últimos projetos
+      h2 Últimos projetos
       ul
         li(
           v-for="(item, index) in projects"
           :key="index"
           :style="`background-image: url(${item.preview})`"
         )
-          nuxt-link(:to="{name: 'projeto-id', params: {id: 1}}")
+          nuxt-link(
+            :to="{name: 'projeto-id', params: {id: 1}}"
+            :title="item.title"
+          )
             .title {{ item.title }}
 </template>
 
@@ -62,33 +65,21 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-#projects {
+section {
   background-color: #343a40;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: background 300ms ease;
-  padding: 3em 0;
   .content {
-    width: 70%;
-    margin: 0 auto;
-    h3 {
+    h2 {
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-      margin-bottom: 1.5em;
       color: #fff;
-      letter-spacing: 0.025em;
-      font-size: 1.5em;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
-      display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      width: 100%;
       li {
         width: 49%;
-        margin-bottom: 1em;
         height: 200px;
         background-color: #222;
         background-position: center center;
@@ -124,16 +115,11 @@ export default {
     }
   }
 }
-
-@media screen and (max-width: 768px) {
-  #projects {
-    .content {
-      width: 96%;
-      ul {
-        li {
-          width: 96%;
-          margin: 1em auto;
-        }
+@media screen and (max-width: 425px) {
+  section {
+    .content ul {
+      li {
+        width: 100%;
       }
     }
   }

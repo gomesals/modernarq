@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  section
     .content
       .info
         .item
@@ -22,17 +22,18 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+section{
+  margin-top: -40vh;
+}
 .content {
-  width: 70%;
-  margin: -35vh auto 4em;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   box-shadow: 0 3px 11px -4px rgba(0, 0, 0, 0.2);
   .info {
     display: flex;
     justify-content: space-around;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.75rem 1.5rem;
     .item {
       color: #868e96;
       overflow: hidden;
@@ -46,13 +47,12 @@ export default {
     }
   }
   .text {
-    padding: 3.5rem 2rem 2rem;
+    padding: 1.5rem 1.5rem 1px;
     p {
-      max-width: 50em;
       font-size: 16px;
       line-height: 1.5;
       color: #495057;
-      margin: 0 auto 2em;
+      margin-bottom: 1.5rem;
     }
   }
 }
