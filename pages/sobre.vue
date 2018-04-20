@@ -91,12 +91,10 @@ export default {
       width: 100%;
       min-width: initial;
       ul {
+        justify-content: space-between;
         li {
-          width: 48.5%;
+          width: 48%;
           margin-right: 0;
-          &:nth-child(odd) {
-            margin-right: 3%;
-          }
         }
       }
     }
@@ -107,9 +105,6 @@ export default {
     .content ul {
       li {
         width: 100%;
-        &:nth-child(odd) {
-          margin-right: 0;
-        }
       }
     }
   }
