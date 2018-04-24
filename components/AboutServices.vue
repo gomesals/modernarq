@@ -24,13 +24,43 @@ section {
   }
 }
 ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   li {
+    margin-bottom: 1.5rem;
+    width: 30%;
+    margin-right: 3%;
     h3 {
       margin-bottom: 1em;
       color: #343a40;
     }
     p {
       color: #495057;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    .content {
+      ul {
+        justify-content: space-between;
+        li {
+          width: 48%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  section {
+    .content ul {
+      li {
+        width: 100%;
+      }
     }
   }
 }

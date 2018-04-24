@@ -29,7 +29,15 @@ section {
   }
 }
 ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   li {
+    margin-bottom: 1.5rem;
+    width: 30%;
+    margin-right: 3%;
     height: 200px;
     color: #f1f3f5;
     background-position: center center;
@@ -59,6 +67,29 @@ ul {
       font-size: 1.15em;
       color: #dee2e6;
       transition: color 300ms ease;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    .content {
+      ul {
+        justify-content: space-between;
+        li {
+          width: 48%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  section {
+    .content ul {
+      li {
+        width: 100%;
+      }
     }
   }
 }
