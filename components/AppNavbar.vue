@@ -1,5 +1,5 @@
 <template lang="pug">
-  navbar(:class="{fluid, dark, transparent}")
+  nav(:class="{fluid, dark, transparent}")
     .nc
       .home
         nuxt-link(:to="{name: 'index'}" :title="name")
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-navbar {
+nav {
   .nc {
     display: flex;
     justify-content: space-between;
@@ -159,7 +159,7 @@ navbar {
     }
   }
 }
-navbar {
+nav {
   &,
   .nav ul {
     background-color: #fff;
@@ -237,7 +237,7 @@ navbar {
   }
 }
 @media screen and (max-width: 768px) {
-  navbar {
+  nav {
     padding-left: 2rem;
     padding-right: 2rem;
     .nc {
@@ -267,7 +267,7 @@ navbar {
       }
     }
   }
-  navbar {
+  nav {
     &.transparent.dark {
       .nc {
         .nav {
