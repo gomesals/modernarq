@@ -1,7 +1,18 @@
 <template lang="pug">
   div
+    app-navbar
     nuxt
+    app-footer
 </template>
+
+<script>
+import AppNavbar from '~/components/AppNavbar'
+import AppFooter from '~/components/AppFooter'
+export default {
+  components: { AppNavbar, AppFooter }
+}
+</script>
+
 
 <style lang="postcss">
 html {
@@ -38,6 +49,9 @@ section {
       letter-spacing: 0.05em;
     }
   }
+}
+.text-right {
+  text-align: right;
 }
 @media screen and (max-width: 768px) {
   section {
