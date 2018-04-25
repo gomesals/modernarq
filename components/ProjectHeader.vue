@@ -11,7 +11,7 @@ export default {
 
 <style lang='postcss' scoped >
 header {
-  height: 70vh;
+  height: 30rem;
   width: 100%;
   text-align: center;
   background-position: center center;

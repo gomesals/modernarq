@@ -23,7 +23,7 @@ export default {
 
 <style lang="postcss" scoped>
 section{
-  margin-top: -40vh;
+  margin-top: -19rem;
 }
 .content {
   background: rgba(255, 255, 255, 0.6);
