@@ -12,6 +12,9 @@ import AboutServices from '~/components/AboutServices'
 import AboutText from '~/components/AboutText'
 import AboutTeam from '~/components/AboutTeam'
 export default {
+  head: () => ({
+    title: 'Sobre'
+  }),
   components: { AboutHeader, AboutServices, AboutText, AboutTeam },
   data: () => ({
     about: {

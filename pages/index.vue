@@ -14,6 +14,10 @@ import LastProjects from '~/components/LastProjects'
 import Testimonials from '~/components/Testimonials'
 import HomeContact from '~/components/HomeContact'
 export default {
+  head: () => ({
+    title: 'Modernarq',
+    titleTemplate: ''
+  }),
   components: {
     Welcome,
     AboutServices,

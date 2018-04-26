@@ -12,6 +12,9 @@ import ProjectContent from '~/components/ProjectContent'
 import ProjectGallery from '~/components/ProjectGallery'
 import LastProjects from '~/components/LastProjects'
 export default {
+  head: () => ({
+    title: 'Projeto'
+  }),
   components: {
     ProjectHeader,
     ProjectContent,

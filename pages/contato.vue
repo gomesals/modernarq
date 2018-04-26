@@ -10,6 +10,9 @@ import ContactHeader from '~/components/ContactHeader'
 import ContactInfo from '~/components/ContactInfo'
 import ContactForm from '~/components/ContactForm'
 export default {
+  head: () => ({
+    title: 'Contato'
+  }),
   components: { ContactHeader, ContactInfo, ContactForm },
   data: () => ({
     contact: {
