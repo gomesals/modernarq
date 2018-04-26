@@ -52,7 +52,7 @@ export default {
       },
       date: '18/04/2018',
       category: 'Design de interiores',
-      author: 'Alexandre Gomes',
+      author: 'Arquiteto Sr.',
       content: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris sapien, gravida quis accumsan ut, auctor non nunc. Nulla vitae justo at mauris tincidunt sagittis vitae nec tellus. Sed non porta velit. Aenean tristique eu velit nec scelerisque. Phasellus facilisis consectetur sem, id euismod velit venenatis a. Morbi mattis tristique ligula eget vulputate. Vivamus pharetra rhoncus rhoncus. Nam dapibus lobortis pulvinar. In efficitur lacus at magna fermentum, id tincidunt metus eleifend.',
         'Nam eu tempus justo, <strong>non</strong> hendrerit sapien. Proin purus elit, bibendum id mattis a, consectetur sit amet orci. Integer tristique in tortor eu pellentesque. Aliquam ultricies iaculis eros, sed hendrerit sapien euismod in. Sed posuere justo mollis dui pharetra, nec cursus elit euismod. Morbi placerat dolor leo. Vestibulum lacus nunc, congue ut orci eu, tempor convallis velit. Sed feugiat dapibus turpis sit amet ultricies. Quisque efficitur in orci non sagittis. Phasellus id neque ut turpis efficitur maximus. Ut nunc eros, aliquam id porta ut, viverra vitae sapien. Integer iaculis auctor volutpat. Maecenas leo nisl, accumsan in feugiat a, sodales ac elit.',
