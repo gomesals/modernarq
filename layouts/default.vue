@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    app-navbar
+    app-navbar(dark)
     nuxt
     app-footer
 </template>
