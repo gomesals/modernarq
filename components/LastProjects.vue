@@ -9,7 +9,7 @@
           :style="`background-image: url(${item.preview})`"
         )
           nuxt-link(
-            :to="{name: 'projeto-id', params: {id: 1}}"
+            :to="{name: 'projetos-id', params: {id: 1}}"
             :title="item.title"
           )
             .title {{ item.title }}
